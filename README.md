@@ -35,7 +35,7 @@ Este proyecto es un simulador de carrito de compras en línea diseñado para la 
 
 ## Instrucciones de Uso
 
-1. Clona este repositorio: `git clone https://github.com/tu-usuario/tu-proyecto.git`
+1. Clona este repositorio: `git clone https://github.com/jbellof/Postwork-Modulo4-JuanBello
 2. Abre el archivo `index.html` en tu navegador web.
 
 ## Contribución
