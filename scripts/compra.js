@@ -6,14 +6,28 @@ const cliente = document.getElementById('cliente');
 const correo = document.getElementById('correo');
 
 cargarEventos();
-
+/**
+ * Asocia eventos a elementos del DOM al cargar la página.
+ * - Evento 'DOMContentLoaded': Lee el carrito desde el almacenamiento local.
+ * - Evento de clic en 'carrito2': Elimina productos del carrito.
+ * - Calcula el total de la compra.
+ * - Evento de clic en 'procesarCompraBtn': Inicia el proceso de compra.
+ */
 function cargarEventos(){
     document.addEventListener('DOMContentLoaded', compra.leerLocalStorageCompra());
     carrito2.addEventListener('click', (e)=>{compra.eliminarProducto(e)});
     compra.calcularTotal();
     procesarCompraBtn.addEventListener('click', procesarCompra);
 }
-
+/**
+ * Maneja la lógica de procesar una compra.
+ * - Verifica la existencia de productos en el carrito.
+ * - Verifica la introducción de datos del cliente.
+ * - Inicializa 'emailjs' y envía el formulario de compra.
+ * - Muestra mensajes de error o éxito usando 'SweetAlert'.
+ * - Vacía el carrito y redirige a la página de productos después de una compra exitosa.
+ * @param {Event} e - Evento que desencadena la función (clic en 'procesarCompraBtn').
+ */
 function procesarCompra(e){
     //e.preventDefault();
     if(compra.obtenerProductosLocalStorage().length === 0){

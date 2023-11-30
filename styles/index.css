@@ -256,6 +256,7 @@ nav * {
   font-family: "Poppins", sans-serif;
   overflow: hidden;
   transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  background-color: #ffffff;
 }
 
 .card:before{
@@ -579,6 +580,13 @@ body {
 }
 .formulario{
   font-family: "Poppins", sans-serif;
+}
+.container-carrito{
+  width: 100%;
+}
+#procesar-pago{
+  width: 65%;
+  margin-bottom: 20px;
 }
 .container-carrito h2{
   text-align: center;
@@ -1160,4 +1168,79 @@ p{
     main {
       border-radius: 2px;
     }
+  }
+  @media screen and (max-width: 600px) {
+    /* Cambia el tamaño del texto para dispositivos móviles */
+    nav {
+      flex-direction: column;
+      background-color: 25157;
+    }
+    nav * {
+      width: 100%;
+      text-align: center;
+      margin: 8px 0;
+    }
+    h1 {
+      font-size: 24px;
+    }
+    p {
+      font-size: 16px;
+    }
+    /* Ajusta el espaciado y los márgenes */
+    body {
+      padding: 10px;
+    }
+    nav ul car{
+      display: none;
+    }
+    nav ul Logo{
+      display: none;
+    }
+    nav ul.show{
+      display: block;
+    }
+    nav ul.show{
+      display: block;
+    }
+    nav ul li a{
+      display: block;
+      padding: 0.5rem 0;
+    }
+
+    nav ul li a:hover{
+      color: #f2f2f2;
+    }
+    /* Estilos CSS para la imagen del logo en el navbar */
+.navbar-item img {
+  max-width: 8%;
+  height: auto;
+}
+ /* Cambia el diseño de las secciones */
+ .how-it-works {
+  padding: 10px;
+}
+.feature {
+  padding: 15px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.how-it-works {
+  padding: 10px;
+}
+.features {
+  display: block; /* Cambiar a una disposición de bloque en lugar de una cuadrícula */
+}
+.feature {
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+
+
   }
